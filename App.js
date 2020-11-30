@@ -4,18 +4,18 @@ import LoadingScreen from './app/screens/LoadingScreen';
 import LoginScreen from './app/screens/LoginScreen';
 import RegisterScreen from './app/screens/RegisterScreen';
 import HomeScreen from './app/screens/HomeScreen';
-
+import { REACT_APP_FIREBASE_KEY, REACT_APP_DOMAIN, REACT_APP_DATABASE , REACT_APP_PROJECT_ID, REACT_APP_STORAGE_BUCKET, REACT_APP_SENDER_ID, REACT_APP_ID, REACT_MEASUREMENT_ID} from 'react-native-dotenv';
 import * as firebase from 'firebase'
 
 var firebaseConfig = {
-  apiKey: "AIzaSyBoXdqpSZ0OLcVCXmd_5UAvm52oNWE5gwo",
-  authDomain: "project3-e3201.firebaseapp.com",
-  databaseURL: "https://project3-e3201.firebaseio.com",
-  projectId: "project3-e3201",
-  storageBucket: "project3-e3201.appspot.com",
-  messagingSenderId: "923299188804",
-  appId: "1:923299188804:web:5f96df3bd454c8ec87ec11",
-  measurementId: "G-57TZHMWD9R"
+  apiKey: REACT_APP_FIREBASE_KEY,
+  authDomain: REACT_APP_DOMAIN,
+  databaseURL: REACT_APP_DATABASE,
+  projectId: REACT_APP_PROJECT_ID,
+  storageBucket: REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: REACT_APP_SENDER_ID,
+  appId: REACT_APP_ID,
+  measurementId: REACT_MEASUREMENT_ID
 };
 
 // Initialize Firebase
